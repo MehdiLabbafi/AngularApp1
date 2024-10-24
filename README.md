@@ -12,7 +12,7 @@ Features
 
 	•	Displays four conservation areas, each with multiple time slots.
 	•	Users can book available time slots by clicking the “Book Now” button.
-	•	Once a time slot is booked, the button turns grey and is disabled to prevent further bookings for that time slot.
+	•	Once a time slot is booked, the button turns gren and is disabled to prevent further bookings for that time slot.
 	•	The interface is designed to be responsive and user-friendly, with clear buttons and section separation.
 
 Installation
@@ -79,4 +79,4 @@ Contributors
 
 	•	Mehdi Labbafi - Developer and creator of the project.
 
-This description covers the main aspects of your project and provides instructions for setup and testing. Let me know if you need any further modifications!
+
