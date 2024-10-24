@@ -75,5 +75,3 @@ To test the booking functionality:
 ## Contributors
 
 - **Mehdi Labbafi** - Developer and creator of the project.
-```
-
