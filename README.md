@@ -1,31 +1,24 @@
 # AngularApp1
 Assignment 1
 
-Here’s the updated README for your GitHub project with the necessary changes:
-
-AngularApp1
-
-Assignment 1
-
-Reservation System
+# Reservation System
 
 This is an Angular project that allows users to book time slots for visiting different conservation areas. The system displays four areas, and each area contains several time slots available for booking.
 
-Features
+## Features
 
-	•	Displays four conservation areas, each with multiple time slots.
-	•	Users can book available time slots by clicking the “Book Now” button.
-	•	Once a time slot is booked, the button turns grey and is disabled to prevent further bookings for that time slot.
-	•	The interface is designed to be responsive and user-friendly, with clear buttons and section separation.
+- Displays four conservation areas, each with multiple time slots.
+- Users can book available time slots by clicking the “Book Now” button.
+- Once a time slot is booked, the button turns grey and is disabled to prevent further bookings for that time slot.
+- The interface is designed to be responsive and user-friendly, with clear buttons and section separation.
 
-Installation
+## Installation
 
 To set up and run this project locally, follow these steps:
 
-	1.	Clone the repository:
-
-git clone https://github.com/MehdiLabbafi/AngularApp1.git
-
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MehdiLabbafi/AngularApp1.git
 
 	2.	Navigate to the project directory:
 
@@ -46,11 +39,11 @@ ng serve
 
 http://localhost:4200
 
+
+
 Note: If port 4200 is already in use on your system, you can specify a different port when running the project:
 
 ng serve --port 4300
-
-
 
 Project Structure
 
@@ -82,3 +75,4 @@ Contributors
 
 	•	Mehdi Labbafi - Developer and creator of the project.
 
+این به گیت‌هاب امکان می‌دهد دکمه‌های کپی به درستی روی هر بخش از بلوک کد اعمال شوند.
