@@ -1,10 +1,13 @@
 # AngularApp1
 Assignment 1
 
+Here’s the updated README for your GitHub project with the necessary changes:
 
+AngularApp1
 
+Assignment 1
 
-# Reservation System
+Reservation System
 
 This is an Angular project that allows users to book time slots for visiting different conservation areas. The system displays four areas, and each area contains several time slots available for booking.
 
@@ -12,7 +15,7 @@ Features
 
 	•	Displays four conservation areas, each with multiple time slots.
 	•	Users can book available time slots by clicking the “Book Now” button.
-	•	Once a time slot is booked, the button turns gren and is disabled to prevent further bookings for that time slot.
+	•	Once a time slot is booked, the button turns grey and is disabled to prevent further bookings for that time slot.
 	•	The interface is designed to be responsive and user-friendly, with clear buttons and section separation.
 
 Installation
@@ -78,5 +81,4 @@ Notes
 Contributors
 
 	•	Mehdi Labbafi - Developer and creator of the project.
-
 
