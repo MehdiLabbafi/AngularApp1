@@ -2,9 +2,9 @@
 Assignment 1
 
 
-Here is a README description for your GitHub project:
 
-Reservation System
+
+# Reservation System
 
 This is an Angular project that allows users to book time slots for visiting different conservation areas. The system displays four areas, and each area contains several time slots available for booking.
 
