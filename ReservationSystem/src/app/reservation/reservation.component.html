@@ -1,0 +1,13 @@
+<div class="grid-container">
+    <div class="area" *ngFor="let area of areas">
+      <h2 class="area-title">{{ area.name }}</h2>
+      <ul>
+        <li *ngFor="let slot of area.availableSlots; let i = index">
+          {{ slot.time }} - 
+          <button (click)="bookSlot(area.id, i)" [disabled]="slot.isBooked">
+            {{ slot.isBooked ? 'Booked' : 'Book Now' }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>

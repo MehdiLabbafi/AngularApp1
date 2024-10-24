@@ -1,0 +1,109 @@
+/* تنظیمات کلی صفحه */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* تنظیم کلی برای وسط قرار دادن محتوا */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #555;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0 30px 0; /* فاصله بالا و پایین */
+    text-align: center; /* وسط‌چین کردن متن */
+    width: 100%; /* کل عرض صفحه */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.area {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.area-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;  /* مطمئن شوید که عنوان‌های مناطق هم وسط‌چین هستند */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.time-slot {
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: 120px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+/* استایل برای دکمه‌های رزرو شده */
+button.booked {
+    background-color: #808080 !important;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+}
+
+button.booked:hover {
+    background-color: #808080 !important;
+    transform: none;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    position: fixed; /* ثابت کردن فوتر در پایین صفحه */
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f9; /* رنگ پس‌زمینه فوتر */
+    padding: 10px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #555;
+}
