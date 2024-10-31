@@ -38,6 +38,7 @@ This project is an Angular-based reservation system that allows users to view an
    ```bash
    npm install
    ng serve
+   ```
 
 Open http://localhost:4200 in your browser to view the app.
 
