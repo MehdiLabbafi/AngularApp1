@@ -1,0 +1,30 @@
+<div class="checkout-container">
+    <h2 class="checkout-title">Checkout</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price (CAD)</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price }} CAD</td> 
+            <td><button (click)="removeFromCart(item)">Remove</button></td>
+          </tr>
+      </tbody>
+    </table>
+  
+    <!-- total box and button -->
+    <div class="totals-container">
+      <div class="totals">
+        <p>Total Quantity: {{ totalQuantity }}</p>
+        <p>Total Price: {{ totalPrice | currency:'CAD':'symbol' }}</p>
+      </div>
+      <button class="complete-order-btn" (click)="completeOrder()">Complete Order</button>
+    </div>
+  </div>

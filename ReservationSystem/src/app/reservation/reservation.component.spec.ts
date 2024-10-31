@@ -1,23 +1,32 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
-import { ReservationComponent } from './reservation.component';
+@Component({
+  selector: 'app-reservation',
+  templateUrl: './reservation.component.html',
+  styleUrls: ['./reservation.component.css']
+})
+export class ReservationComponent {
+  areas: Array<{ name: string, slots: string[] }> = [
+    {
+      name: 'Area 1',
+      slots: [
+        '9:00 - 12:00',
+        '10:00 - 13:00',
+        '11:00 - 14:00',
+      ]
+    },
+    {
+      name: 'Area 2',
+      slots: [
+        '9:00 - 12:00',
+        '10:00 - 13:00',
+        '11:00 - 14:00',
+      ]
+    },
+  ];
 
-describe('ReservationComponent', () => {
-  let component: ReservationComponent;
-  let fixture: ComponentFixture<ReservationComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ReservationComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(ReservationComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  bookSlot(areaName: string, slot: string) {
+    console.log(`Booking slot ${slot} in ${areaName}`);
+    
+  }
+}

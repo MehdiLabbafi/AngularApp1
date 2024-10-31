@@ -1,0 +1,29 @@
+<div class="header-container">
+    <h2>Reservation System - Book a Slot</h2>
+  </div>
+  
+  <div class="book-container">
+    <table class="book-table">
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Available Slots</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let area of areas">
+          <td>{{ area.name }}</td>
+          <td>
+            <ul class="slots-list">
+              <li *ngFor="let slot of area.slots; let i = index">
+                {{ slot.time }}
+                <button class="book-btn" [disabled]="slot.isBooked" (click)="bookSlot(area, i)">
+                  {{ slot.isBooked ? 'Booked' : 'Book Now' }}
+                </button>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

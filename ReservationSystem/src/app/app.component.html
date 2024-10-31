@@ -1,9 +1,12 @@
 <div class="header-container">
-  <h1>Reservation System</h1>
-</div>
-
-<app-reservation></app-reservation>
-
-<div class="footer">
-  <p>Created by Mehdi Labbafi</p>
-</div>
+    <h1>My Application</h1>
+    <nav>
+      <ul>
+        <li><a routerLink="/reservation">Products</a></li>
+        <li><a routerLink="/checkout">Checkout</a></li>
+        <li><a routerLink="/book">Book</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <router-outlet></router-outlet>

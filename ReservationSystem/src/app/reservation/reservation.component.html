@@ -1,13 +1,31 @@
-<div class="grid-container">
-    <div class="area" *ngFor="let area of areas">
-      <h2 class="area-title">{{ area.name }}</h2>
-      <ul>
-        <li *ngFor="let slot of area.availableSlots; let i = index">
-          {{ slot.time }} - 
-          <button (click)="bookSlot(area.id, i)" [disabled]="slot.isBooked">
-            {{ slot.isBooked ? 'Booked' : 'Book Now' }}
-          </button>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="header-container">
+  <h1>Products</h1>
+</div>
+
+<table class="product-table">
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Price (CAD)</th>
+      <th>Add to Cart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>
+        <button class="add-to-cart-btn" (click)="onAddToCart(product)">Add to Cart</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Button to go to checkout page -->
+<div class="checkout-link">
+  <button class="go-to-checkout-btn" routerLink="/checkout">Go to Checkout</button>
+</div>
+
+<div class="footer">
+  <p>Created by Mehdi Labbafi</p>
+</div>

@@ -1,29 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { ReservationService } from '../reservation.service';
-import { ConservationArea } from '../models/reservation.model';
+import { Component } from '@angular/core';
+import { Product } from '../models/product.model';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-reservation',
   templateUrl: './reservation.component.html',
   styleUrls: ['./reservation.component.css']
 })
-export class ReservationComponent implements OnInit {
- 
-  areas: ConservationArea[] = [];
+export class ReservationComponent {
+  products: Product[] = [
+    { id: 1, name: 'Product 1', price: 100, quantity: 0 },
+    { id: 2, name: 'Product 2', price: 150, quantity: 0 },
+    { id: 3, name: 'Product 3', price: 200, quantity: 0 },
+  ];
 
-  constructor(private reservationService: ReservationService) {}
+  constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {
-    this.areas = this.reservationService.getConservationAreas();
+  // New function to manage add to cart button
+  onAddToCart(product: Product): void {
+    if (product) {
+      this.addToCart(product);
+    }
   }
 
-  bookSlot(areaId: number, timeSlotIndex: number) {
-    const area = this.areas.find(a => a.id === areaId);
-    if (area && !area.availableSlots[timeSlotIndex].isBooked) {
-      area.availableSlots[timeSlotIndex].isBooked = true;
-      alert('Reservation successful!');
-    } else {
-      alert('Slot already booked.');
-    }
+  // Main add to cart function
+  private addToCart(product: Product): void {
+    this.cartService.addToCart(product);
+    alert(`${product.name} has been added to the cart.`);
   }
 }

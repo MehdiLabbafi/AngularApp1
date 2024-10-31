@@ -1,0 +1,57 @@
+.header-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .book-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .book-table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .book-table th,
+  .book-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .book-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .slots-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .slots-list li {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .book-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .book-btn:hover:not(:disabled) {
+    background-color: #45a049;
+  }
