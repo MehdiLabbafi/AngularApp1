@@ -1,4 +1,73 @@
 # AngularApp1
+### Assignment 2
+
+# Reservation System with Shopping Cart
+
+This project is an Angular-based reservation system that allows users to view and add products to a shopping cart. Users can add items to the cart, view cart details, adjust quantities, remove items, and complete the order process.
+
+## Features
+
+1. **Product Listing and Reservation**:
+   - Displays a list of products with names, prices (in CAD), and an "Add to Cart" button.
+   - When a product is added, a message confirms the addition to the cart.
+
+2. **Cart Management**:
+   - The cart page displays all items added by the user, showing product names, quantities, and prices.
+   - Users can increase/decrease quantities for each item individually.
+   - Option to remove a single item or all items from the cart.
+   - Displays the total quantity and total price of all items in the cart.
+
+3. **Order Completion**:
+   - "Complete Order" button clears the cart, confirms order completion, and redirects users back to the reservation page.
+
+## Project Structure
+
+- **Components**:
+  - `ReservationComponent`: Displays the list of products available for reservation.
+  - `CheckoutComponent`: Manages the cart, displays items, and calculates totals.
+
+- **Services**:
+  - `CartService`: Manages adding, removing, and updating items in the cart, as well as calculating total prices and quantities.
+
+- **Models**:
+  - `Product`: Defines the structure of a product with `id`, `name`, `price`, and `quantity`.
+
+## How to Use
+
+1. **Start the Project**:
+   ```bash
+   npm install
+   ng serve
+
+   Open http://localhost:4200 in your browser to view the app.
+
+	2.	Adding Products to the Cart:
+	•	Go to the reservation page, select a product, and click “Add to Cart”.
+	•	A confirmation message will be displayed.
+	3.	Viewing and Managing Cart:
+	•	Navigate to the cart page using the “Go to Checkout” button.
+	•	Adjust quantities, remove items, and see the total amount.
+	4.	Completing the Order:
+	•	Click the “Complete Order” button to finalize your purchase.
+	•	The system will clear the cart and redirect to the reservation page.
+
+Technical Details
+
+	•	Angular Version: 18.2.10
+	•	TypeScript: Ensure that the TypeScript version is compatible with Angular.
+	•	Dependencies: List your main dependencies if necessary.
+
+Notes
+
+	•	This project is designed for demonstration purposes to show a reservation system combined with a shopping cart.
+	•	For any issues, please ensure your Node.js and Angular CLI versions are compatible with Angular 18.
+
+ ## Contributors
+
+- **Mehdi Labbafi** - Developer and creator of the project.
+
+-------------------------------------------------------------------------------------------------------------------------
+# AngularApp1
 ### Assignment 1
 
 ## Reservation System
