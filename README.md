@@ -37,6 +37,8 @@ This project is an Angular-based reservation system that allows users to view an
 1. **Start the Project**:
    ```bash
    npm install
+   ```
+    ```bash
    ng serve
    ```
 
