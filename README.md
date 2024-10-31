@@ -39,7 +39,7 @@ This project is an Angular-based reservation system that allows users to view an
    npm install
    ng serve
 
-   Open http://localhost:4200 in your browser to view the app.
+Open http://localhost:4200 in your browser to view the app.
 
 	2.	Adding Products to the Cart:
 	•	Go to the reservation page, select a product, and click “Add to Cart”.
@@ -62,9 +62,6 @@ Notes
 	•	This project is designed for demonstration purposes to show a reservation system combined with a shopping cart.
 	•	For any issues, please ensure your Node.js and Angular CLI versions are compatible with Angular 18.
 
- ## Contributors
-
-- **Mehdi Labbafi** - Developer and creator of the project.
 
 -------------------------------------------------------------------------------------------------------------------------
 # AngularApp1
