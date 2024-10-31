@@ -45,14 +45,14 @@ This project is an Angular-based reservation system that allows users to view an
 Open http://localhost:4200 in your browser to view the app.
 
 	2.	Adding Products to the Cart:
-	•	Go to the reservation page, select a product, and click “Add to Cart”.
-	•	A confirmation message will be displayed.
+	-	Go to the reservation page, select a product, and click “Add to Cart”.
+	-	A confirmation message will be displayed.
 	3.	Viewing and Managing Cart:
-	•	Navigate to the cart page using the “Go to Checkout” button.
-	•	Adjust quantities, remove items, and see the total amount.
+	-	Navigate to the cart page using the “Go to Checkout” button.
+	-	Adjust quantities, remove items, and see the total amount.
 	4.	Completing the Order:
-	•	Click the “Complete Order” button to finalize your purchase.
-	•	The system will clear the cart and redirect to the reservation page.
+	-	Click the “Complete Order” button to finalize your purchase.
+	-	The system will clear the cart and redirect to the reservation page.
 
 Technical Details
 
@@ -65,6 +65,9 @@ Notes
 	•	This project is designed for demonstration purposes to show a reservation system combined with a shopping cart.
 	•	For any issues, please ensure your Node.js and Angular CLI versions are compatible with Angular 18.
 
+## Contributors
+
+- **Mehdi Labbafi** - Developer and creator of the project.
 
 -------------------------------------------------------------------------------------------------------------------------
 # AngularApp1
